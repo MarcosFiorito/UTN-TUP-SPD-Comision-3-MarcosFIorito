@@ -1,0 +1,40 @@
+// Código Ejemplo
+int buttonState = 0;
+void setup()
+{
+// Configurar Pin como Entrada
+pinMode(2, INPUT);
+// Configurar Pines como Salida
+pinMode(5, OUTPUT);
+pinMode(9, OUTPUT);
+
+}
+void loop()
+{
+// Leer Estado del Puerto de Entrada 2
+buttonState = digitalRead(2);
+// Actual Segun el Estado de la Lectura
+if (buttonState == HIGH){
+  digitalwrite(5, low)
+  digitalwrite(9, high)
+  digitalwrite(13,low)
+  delay(1000)
+  digitalwrite(13,high)
+  digitalwrite(5, low)
+  digitalwrite(9,low)
+  delay(1000)
+  digitalwrite(13, low)
+  digitalwrite(9, low)
+  digitalwrite(5, high)
+  delay(1000)
+  
+
+  
+} else {
+// Apagar Leds en Puertos 13, 9 y 5
+digitalWrite(5, LOW);
+digitalWrite(13, LOW);
+
+}
+}
+  
